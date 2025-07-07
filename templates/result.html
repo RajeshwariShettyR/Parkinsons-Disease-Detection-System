@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Parkinson's Disease Prediction</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white text-gray-800 flex flex-col min-h-screen">
+
+  <header class="bg-black text-white py-4">
+    <div class="max-w-7xl mx-auto px-6 flex justify-between items-center">
+      <h1 class="text-xl font-bold uppercase">Parkinson's Disease Prediction</h1>
+      <nav class="space-x-6">
+        <a href="/" class="hover:text-gray-300">Home</a>
+        <a href="/about" class="hover:text-gray-300">About Parkinson's</a>
+        <a href="/prediction" class="hover:text-gray-300">Prediction Tool</a>
+        <a href="/symptoms" class="hover:text-gray-300">Symptoms</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-grow flex justify-center items-center bg-gray-100">
+    <div class="text-center p-6 bg-white shadow-lg rounded-lg w-full max-w-md my-6">
+      <h1 class="text-3xl font-semibold text-gray-800 mb-4 uppercase">Prediction Result</h1>
+
+      <!-- Prediction Result Section -->
+      <div id="result" class="text-xl font-bold p-4 border border-gray-300 rounded-md shadow-sm mb-6">
+        <!-- Result Text will be dynamically updated -->
+        <div class="{{ result_color }} p-4 bg-gray-50 border border-gray-300 rounded-md shadow-sm mb-6">{{ result }}</div>
+        <img src="{{ result_image }}" alt="Prediction Image" class=" mx-auto mb-4">
+      </div>
+
+      <a href="/prediction" class="inline-block px-6 py-2 bg-blue-900 text-white font-semibold rounded-lg hover:bg-blue-700 transition-colors">
+        Go back to Prediction Form
+      </a>
+    </div>
+  </main>
+
+  <!-- Footer Section -->
+  <footer class="bg-blue-900 text-white py-4 mt-auto">
+    <div class="max-w-7xl mx-auto px-6 text-center">
+      <p>&copy; 2024 Parkinson's Disease Prediction. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+</body>
+
+</html>
